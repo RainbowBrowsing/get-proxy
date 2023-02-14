@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <meta charset="UTF-8" />
+         <title>AnonShield</title>
+         <link rel="stylesheet" href="./libs/picnic.min.css" />
+         <link rel="stylesheet" href="./style.css" />
+     </head>
+     <body>
+         <img class="logo" src="img/logo.webp" alt="Logo" />
+         <h1>AnonShield</h1>
+         <div class="container">
+             <p>
+                 Taken from open source
+                 <b>Proxy</b> (<b>HTTPS</b>), <br />
+                 which you can use, <br />
+                 to access blocked sites or change your IP address
+             </p>
+             <p>
+                 Do not enter your personal/card details while using Proxy.
+                 This extension will allow you to bypass the blocking and watch the material you are interested in and nothing more.
+             </p>
+             <p>
+                 Allow the extension to work in private mode, otherwise these
+                 settings won't work.
+             </p>
+             <!-- <a target="_blank" href="./pages/proxysett.html">How to configure?</a> -->
+             <div class="indent"></div>
+             <h2>Get Proxy</h2>
+             <pre><code id="proxy"><span class="text_placeholder">IP and port will appear here</span></code></pre>
+             <button class="button" id="request">Get Proxy</button>
+             <button class="button" id="btn_setProxy" disabled>Set this Proxy</button>
+             <div class="indent"></div>
+             <h2>Set custom proxy settings (HTTPS only)</h2>
+             <span>Enter Proxy IP and port:</span>
+             <div>
+                 <div class="inputs">
+                     <input
+                         id="userIp"
+                         type="text"
+                         placeholder="***.***.***.***" data-tooltip="Invalid<br>IP!"
+                     />:<input id="userPort" type="text" placeholder="*****" data-tooltip="Invalid<br>port!" />
+                 </div>
+                 <button class="button" id="btn_setUserProxy" disabled>
+                     Set Proxy
+                 </button>
+             </div>
+             <div class="indent"></div>
+             <h2>Disable Proxy</h2>
+             <div>
+                 <button class="button" id="btn_disableProxy">
+                     Disable proxy
+                 </button>
+             </div>
+         </div>
+         <script src="./script.js" type="module"></script>
+     </body>
+</html>
